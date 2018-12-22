@@ -20,7 +20,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     @PostConstruct
     public void init() {
         // this data would typically be retrieved from a database
-         this.accountDetails = new TreeMap<>();
+        this.accountDetails = new TreeMap<>();
         PasswordEncoder encoder = new BCryptPasswordEncoder();
         String password = encoder.encode("password");
         this.accountDetails = new TreeMap<>();
